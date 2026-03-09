@@ -1,5 +1,6 @@
 import java.util.HashSet;
-
+//leetcode: 217	Contains Duplicate
+// https://leetcode.com/problems/contains-duplicate/description/
 public class FraudDetector {
     public static void main(String[] args) {
         int [] arr={1,2,3,1};

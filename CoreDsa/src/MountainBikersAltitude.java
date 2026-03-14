@@ -12,9 +12,9 @@ public class MountainBikersAltitude {
             prefixSum[i]=prefixSum[i-1]+gain[i];
         }
         int low=0;
-        for (int i = 0; i < gain.length-1; i++) {
-            if(low<prefixSum[i+1]){
-                low=prefixSum[i+1];
+        for (int i = 1; i < gain.length; i++) {
+            if(low<prefixSum[i]){
+                low=prefixSum[i];
             }
         }
         return low;

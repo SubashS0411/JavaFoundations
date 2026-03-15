@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/CoreDsa/HashProblems/HashProblems.iml" filepath="$PROJECT_DIR$/CoreDsa/HashProblems/HashProblems.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Java Foundation.iml" filepath="$PROJECT_DIR$/.idea/Java Foundation.iml" />
       <module fileurl="file://$PROJECT_DIR$/CoreDsa/LinkedListProblems/LinkedListProblems.iml" filepath="$PROJECT_DIR$/CoreDsa/LinkedListProblems/LinkedListProblems.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CoreDsa/QueueProblems/QueueProblems.iml" filepath="$PROJECT_DIR$/CoreDsa/QueueProblems/QueueProblems.iml" />
       <module fileurl="file://$PROJECT_DIR$/CoreDsa/StackProblems/StackProblems.iml" filepath="$PROJECT_DIR$/CoreDsa/StackProblems/StackProblems.iml" />
       <module fileurl="file://$PROJECT_DIR$/CoreDsa/StringProblems/StringProblems.iml" filepath="$PROJECT_DIR$/CoreDsa/StringProblems/StringProblems.iml" />
     </modules>

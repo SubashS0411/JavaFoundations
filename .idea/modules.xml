@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/CoreDsa/Recursion/Recursion.iml" filepath="$PROJECT_DIR$/CoreDsa/Recursion/Recursion.iml" />
       <module fileurl="file://$PROJECT_DIR$/CoreDsa/StackProblems/StackProblems.iml" filepath="$PROJECT_DIR$/CoreDsa/StackProblems/StackProblems.iml" />
       <module fileurl="file://$PROJECT_DIR$/CoreDsa/StringProblems/StringProblems.iml" filepath="$PROJECT_DIR$/CoreDsa/StringProblems/StringProblems.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TreeProblems/TreeProblems.iml" filepath="$PROJECT_DIR$/TreeProblems/TreeProblems.iml" />
     </modules>
   </component>
 </project>

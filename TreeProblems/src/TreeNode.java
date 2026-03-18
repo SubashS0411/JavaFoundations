@@ -1,3 +1,8 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
 public class TreeNode {
 //    leecode problem:104. Maximum Depth of Binary Tree
 //    https://leetcode.com/problems/maximum-depth-of-binary-tree/description/
@@ -70,5 +75,47 @@ public class TreeNode {
           invertTree(root.right);
           return root;
 
+      }
+
+      public static int diameterOfBinaryTree(TreeNode root) {
+          System.out.println(calculateDepth(root));
+
+      }
+      public static int calculateDepth(TreeNode root){
+          int maxdiameter=0;
+          if(root==null){
+              return 0;
+          }
+          int rightside=calculateDepth(root.right);
+          int leftside=calculateDepth(root.left);
+          maxdiameter=Math.max(maxdiameter,leftside+rightside);
+          return Math.max(leftside,rightside)+1;
+      }
+//      LeetCode Problem :102.Binary Tree Level Order Traversal
+//      https://leetcode.com/problems/binary-tree-level-order-traversal/description/
+      public List<List<Integer>> levelOrder(TreeNode root){
+          List<List<Integer>> album=new ArrayList<>();
+          if(root==null){
+              return album;
+
+          }
+          Queue<Integer> queue=new LinkedList<>();
+          queue.offer(root);
+          while(!queue.isEmpty()){
+              int levelSize=queue.size();
+              List<Integer> currentlevel=new ArrayList<>();
+              for (int i = 0; i < levelSize; i++) {
+                  TreeNode currentNode=queue.poll();
+                  currentlevel.add(currentNode.val);
+                  if(currentlevel.left!=null){
+                      queue.offer(currentNode.left);
+                  }
+                  if(currentlevel.right!=null){
+                      queue.offer(currentNode.right);
+                  }
+              }
+              album.add(currentlevel);
+          }
+          return album;
       }
   }

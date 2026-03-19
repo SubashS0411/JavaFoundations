@@ -93,29 +93,29 @@ public class TreeNode {
       }
 //      LeetCode Problem :102.Binary Tree Level Order Traversal
 //      https://leetcode.com/problems/binary-tree-level-order-traversal/description/
-      public List<List<Integer>> levelOrder(TreeNode root){
-          List<List<Integer>> album=new ArrayList<>();
-          if(root==null){
-              return album;
-
-          }
-          Queue<Integer> queue=new LinkedList<>();
-          queue.offer(root);
-          while(!queue.isEmpty()){
-              int levelSize=queue.size();
-              List<Integer> currentlevel=new ArrayList<>();
-              for (int i = 0; i < levelSize; i++) {
-                  TreeNode currentNode=queue.poll();
-                  currentlevel.add(currentNode.val);
-                  if(currentlevel.left!=null){
-                      queue.offer(currentNode.left);
-                  }
-                  if(currentlevel.right!=null){
-                      queue.offer(currentNode.right);
-                  }
-              }
-              album.add(currentlevel);
-          }
-          return album;
-      }
+//      public List<List<Integer>> levelOrder(TreeNode root){
+//          List<List<Integer>> album=new ArrayList<>();
+//          if(root==null){
+//              return album;
+//
+//          }
+//          Queue<Integer> queue=new LinkedList<>();
+//          queue.offer(root);
+//          while(!queue.isEmpty()){
+//              int levelSize=queue.size();
+//              List<Integer> currentlevel=new ArrayList<>();
+//              for (int i = 0; i < levelSize; i++) {
+//                  TreeNode currentNode=queue.poll();
+//                  currentlevel.add(currentNode.val);
+//                  if(currentlevel.left!=null){
+//                      queue.offer(currentNode.left);
+//                  }
+//                  if(currentlevel.right!=null){
+//                      queue.offer(currentNode.right);
+//                  }
+//              }
+//              album.add(currentlevel);
+//          }
+//          return album;
+//      }
   }

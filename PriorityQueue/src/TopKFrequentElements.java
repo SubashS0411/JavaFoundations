@@ -7,34 +7,35 @@ import java.util.PriorityQueue;
 //https://leetcode.com/problems/top-k-frequent-elements/description/
 public class TopKFrequentElements {
     public static void main(String[] args) {
-        int[] arr={1,1,1,2,2,3};
-        int k=2;
-        System.out.println(Arrays.toString(topKFrequent(arr,k)));
+        int[] arr = {1, 1, 1, 2, 2, 3};
+        int k = 2;
+        System.out.println(Arrays.toString(topKFrequent(arr, k)));
     }
+
     public static int[] topKFrequent(int[] nums, int k) {
-        Map<Integer,Integer> hashmap=new HashMap<>();
-        for (int num:nums){
-            hashmap.put(num,hashmap.getOrDefault(num,0)+1);
+        Map<Integer, Integer> hashmap = new HashMap<>();
+        for (int num : nums) {
+            hashmap.put(num, hashmap.getOrDefault(num, 0) + 1);
         }
 
-        PriorityQueue<Integer> minheap=new PriorityQueue<>(
-                (a,b)->hashmap.get(a)-hashmap.get(b));
+        PriorityQueue<Integer> minheap = new PriorityQueue<>(
+                (a, b) -> hashmap.get(a) - hashmap.get(b));
 
-        for(int num:hashmap.keySet()){
+        for (int num : hashmap.keySet()) {
             minheap.offer(num);
-            if(minheap.size()>k){
+            if (minheap.size() > k) {
                 minheap.poll();
             }
 
         }
-        int[] result=new int[k];
+        int[] result = new int[k];
 //        least frequent to most frequent
 //        for (int i = 0; i < k; i++) {
 //            result[i]=minheap.poll();
 //        }
 //        most frequent to least frequent
-        for (int i=k-1;i>=0;i--){
-            result[i]=minheap.poll();
+        for (int i = k - 1; i >= 0; i--) {
+            result[i] = minheap.poll();
         }
         return result;
     }
@@ -57,5 +58,6 @@ public class TopKFrequentElements {
 //            return;
 //        }
 //        inorderTraversal(root.right,k);
-    }
+
+}
 

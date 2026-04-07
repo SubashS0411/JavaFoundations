@@ -11,8 +11,10 @@ public class JumpGame {
             if(i>maxreach){
                 return  false;
             }
-            maxreach=Math.max(maxreach,i+arr[i]);
 
+            if(maxreach>=arr.length-1){
+                return true;
+            }
         }
         return true;
     }

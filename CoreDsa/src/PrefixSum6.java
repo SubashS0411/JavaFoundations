@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class PrefixSum6 {
     static int [] prefixSum;
     PrefixSum6(int[] values){
@@ -7,6 +9,7 @@ public class PrefixSum6 {
             prefixSum[i]=prefixSum[i-1]+values[i];
 
         }
+        System.out.println(Arrays.toString(prefixSum));
 
     }
     public static int duration(int a,int b){

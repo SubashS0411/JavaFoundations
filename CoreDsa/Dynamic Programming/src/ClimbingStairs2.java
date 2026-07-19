@@ -1,4 +1,6 @@
 public class ClimbingStairs2 {
+//    Leetcode Problem:746 Min Cost Climbing Stairs
+//    https://leetcode.com/problems/min-cost-climbing-stairs/
     public static void main(String[] args) {
 
 //        System.out.println(climbStairsnormal(3));

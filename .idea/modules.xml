@@ -9,6 +9,8 @@
       <module fileurl="file://$PROJECT_DIR$/CoreDsa/HashProblems/HashProblems.iml" filepath="$PROJECT_DIR$/CoreDsa/HashProblems/HashProblems.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Java Foundation.iml" filepath="$PROJECT_DIR$/.idea/Java Foundation.iml" />
       <module fileurl="file://$PROJECT_DIR$/CoreDsa/LinkedListProblems/LinkedListProblems.iml" filepath="$PROJECT_DIR$/CoreDsa/LinkedListProblems/LinkedListProblems.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CoreDsa/NeetcodePreparation/NeetcodePreparation.iml" filepath="$PROJECT_DIR$/CoreDsa/NeetcodePreparation/NeetcodePreparation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CoreDsa/Practice/Practice.iml" filepath="$PROJECT_DIR$/CoreDsa/Practice/Practice.iml" />
       <module fileurl="file://$PROJECT_DIR$/CoreDsa/PriorityQueue/PriorityQueue.iml" filepath="$PROJECT_DIR$/CoreDsa/PriorityQueue/PriorityQueue.iml" />
       <module fileurl="file://$PROJECT_DIR$/CoreDsa/QueueProblems/QueueProblems.iml" filepath="$PROJECT_DIR$/CoreDsa/QueueProblems/QueueProblems.iml" />
       <module fileurl="file://$PROJECT_DIR$/CoreDsa/Recursion/Recursion.iml" filepath="$PROJECT_DIR$/CoreDsa/Recursion/Recursion.iml" />
